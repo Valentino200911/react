@@ -36,3 +36,7 @@
 **Séptimo commit del proyecto en GitHub**
 - Protección de las rutas recién creadas, así como de otras anteriormente modificadas a mediante ProtectedRoutes.jsx
 **Octavo commit del proyecto en GitHub**
+- Cambios en la estructura del formulario de ContactForm.jsx
+- Eliminación del archivo Select.jsx debido a que rompía con la idea de la componetización
+- Cambios en las importaciones de index.css
+**Noveno commit del proyecto en GitHub**
