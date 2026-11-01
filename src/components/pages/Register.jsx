@@ -11,6 +11,8 @@ function Register() {
   const [form, setForm] = useState({
     name:"",
     surname:"",
+    birthDate:"",
+    phoneNumber: "",
     email:"",
     password:""
   })
@@ -31,11 +33,16 @@ function Register() {
     console.log(success);
 
     if (success) {
+
       setForm({
-            name:"",
-            surname:"",
-            email:"",
-            password:""
+
+      name:"",
+      surname:"",
+      birthDate:"",
+      phoneNumber: "",
+      email:"",
+      password:""
+
       })
       navigate("/user/login")
     }
@@ -64,6 +71,26 @@ function Register() {
           id="surname"
           placeholder="Escriba aquí su Apellido"
           value={form.surname}
+          onChange={handleInputChange}
+        />
+
+        <Input
+          type="date"
+          inputText="Escriba aquí su fecha de nacimiento"
+          name="birthDate"
+          id="birthDate"
+          placeholder="Escriba aquí su Apellido"
+          value={form.birthDate}
+          onChange={handleInputChange}
+        />
+
+        <Input
+          type="number"
+          inputText="Número Telefónico"
+          name="phoneNumber"
+          id="phoneNumber"
+          value={form.phoneNumber}
+          placeholder="+5491234567890"
           onChange={handleInputChange}
         />
 

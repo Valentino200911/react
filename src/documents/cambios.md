@@ -20,6 +20,9 @@
 - Eliminación de los archivos api.js y adapters.js
 - Se creó la carpeta documents/ para alojar este archivo
 **Segundo commit del proyecto en GitHub**
+- Cambios en la estructura del formulario de Reservation.jsx. Revisiones del correspondiente hook
+- Cambios en la estructura del formulario de Login.jsx. Revisiones del correspondiente hook
+**Tercer commit del proyecto en GitHub**
 
 /// Gaps
 

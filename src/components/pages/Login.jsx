@@ -72,7 +72,7 @@ function Login() {
           <Button
             type="submit"
             id="send"
-            buttonText="Iniciar sesión como usuario"
+            buttonText="Iniciar sesión"
             className="faculty-glyphic-regular"
           />
         </div>
