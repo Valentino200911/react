@@ -16,19 +16,11 @@
 - Duplicado del proyecto original de front para adaptarlo
 - Creación de un nuevo repositorio para el proyecto
 **Primer commit del proyecto en GitHub**
-- Eliminación de la carpeta src/utils
 - Eliminación de los archivos api.js y adapters.js
 - Se creó la carpeta documents/ para alojar este archivo
 **Segundo commit del proyecto en GitHub**
 - Cambios en la estructura del formulario de Reservation.jsx. Revisiones del correspondiente hook
 - Cambios en la estructura del formulario de Login.jsx. Revisiones del correspondiente hook
 **Tercer commit del proyecto en GitHub**
-
-/// Gaps
-
-- Formulario de crud para "Cabañas"
-- Unir con el back
-- Habilitar los tokens en backend y jsx
-- Editar los formularios para matchear la info.
-- Ruta y panel de perfil y de admin
-- Solucionar errores de estilo
+- Creación de `documents/gaps.md`
+**Cuarto commit del proyecto en GitHub**

@@ -1,0 +1,20 @@
+# Gaps
+
+- Formulario de crud para "Cabañas"
+  - Hook
+  - Form
+  - Page
+  - Card
+- Permitir manejo del token
+- Unir con el back
+- Habilitar los tokens en backend y jsx
+  - Traducir el ruteo general
+  - Verificar los permisos existentes
+  - Modificar Hooks y Handles
+- Editar los formularios y los hooks para matchear la info.
+  - NaturalElement
+  - Reservation
+  - Contact
+- Ruta y panel de perfil y de admin
+- Solucionar errores de estilo
+- Analizar los fragments <> y </>
