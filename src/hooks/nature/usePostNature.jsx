@@ -8,7 +8,7 @@ function usePostNature() {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}naturalElements`, {
+      const response = await fetch(`${API_URL}naturalElement`, {
         method: "POST",
         headers: {
           "Content-type": "Application/json",
@@ -33,7 +33,6 @@ function usePostNature() {
       console.error("Error al crear el elemento desde el Índice", error);
       setError(error);
       return null;
-    } finally {
     }
   };
   return { error, postNature };

@@ -2,7 +2,7 @@
 
 ## 0.⚠️ Aclaración Importante
 
-En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products" (ver db.json y use--Method--Nature) fue renombrado como "naturalElements".
+En la carpeta "server", así como en los hooks de CRUD de Naturaleza, "products" (ver db.json y use--Method--Nature) fue renombrado como "naturalElement".
 
 ## 1. 💡 La Idea del Proyecto
 
@@ -226,7 +226,7 @@ Entre las funcionalidades del proyecto se encuentran:
 Entre las colecciones funcionales que admite el server (db.json), se encuentran:
 
 ```.
-  http://0.0.0.0:3000/naturalElements   #Formularios de Índice, Naturaleza y Editor + NatureCards.
+  http://0.0.0.0:3000/naturalElement   #Formularios de Índice, Naturaleza y Editor + NatureCards.
   http://0.0.0.0:3000/user              #Formularios de Login y Register.
   http://0.0.0.0:3000/reservation       #Formulario de Reservación (Contacto.jsx).
   http://0.0.0.0:3000/contact           #Formulario de Contacto (Contacto.jsx).

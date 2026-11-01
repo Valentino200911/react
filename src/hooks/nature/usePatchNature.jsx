@@ -8,7 +8,7 @@ function usePatchNature() {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}naturalElements/${bioelementId}`, {
+      const response = await fetch(`${API_URL}naturalElement/${bioelementId}`, {
         method: "PATCH",
         headers: {
           "Content-type": "Application/json",
@@ -24,6 +24,7 @@ function usePatchNature() {
       }
 
       const data = await response.json();
+      return data
     } catch (error) {
       console.error(error);
       setError(error);

@@ -9,7 +9,7 @@ function useDeleteNature() {
       setError(null);
 
       const response = await fetch(
-        `${API_URL}naturalElements/${bioelementId}`,
+        `${API_URL}naturalElement/${bioelementId}`,
         {
           method: "DELETE",
           headers: {

@@ -24,3 +24,6 @@
 **Tercer commit del proyecto en GitHub**
 - Creación de `documents/gaps.md`
 **Cuarto commit del proyecto en GitHub**
+- Creación de `src/utils/constants/` por si es necesario en el futuro
+- Verificación de los nombres de rutas. Todas coinciden con el backend, salvo naturalElements, por ende se la modifica en los hooks a naturalElement
+**Quinto commit del proyecto en GitHub**

@@ -8,7 +8,7 @@ function useGetNatureById() {
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}naturalElements/${bioelementId}`);
+      const response = await fetch(`${API_URL}naturalElement/${bioelementId}`);
 
       if (!response.ok) {
         throw new Error(

@@ -36,7 +36,7 @@ function useGetNature() {
   };
 
   useEffect(() => {
-    getNature(`${API_URL}naturalElements`);
+    getNature(`${API_URL}naturalElement`);
   }, []);
 
   return { error, bioelements, loading };
