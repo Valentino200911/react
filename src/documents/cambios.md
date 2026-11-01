@@ -27,3 +27,6 @@
 - Creación de `src/utils/constants/` por si es necesario en el futuro
 - Verificación de los nombres de rutas. Todas coinciden con el backend, salvo naturalElements, por ende se la modifica en los hooks a naturalElement
 **Quinto commit del proyecto en GitHub**
+- Cambios en la estructura de Reservation para que matchee con el front (hook y front)
+  - Se descentralizo la page de `Contacto.jsx` en `Reservation.jsx` y `Contact.jsx`
+**Sexto commit del proyecto en GitHub**

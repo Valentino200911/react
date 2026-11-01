@@ -18,3 +18,6 @@
 - Ruta y panel de perfil y de admin
 - Solucionar errores de estilo
 - Analizar los fragments <> y </>
+- Modificar el README de Front
+- Desinstalar axios
+- Centralizar FirstGallery y SecondGallery
