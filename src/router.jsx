@@ -46,19 +46,19 @@ export const router = createBrowserRouter([
             {
                 path: "/contacto",
 
-                element: <Contact />                
+                element: <ProtectedRoute><Contact /></ProtectedRoute>                    
 
             },
             {
                 path: "/reservacion",
 
-                element: <Reservation />                
+                element: <ProtectedRoute><Reservation /></ProtectedRoute>                    
 
             },
             {
                 path: "/naturaleza",
 
-                element: <Naturaleza />                
+                element: <ProtectedRoute><Naturaleza /></ProtectedRoute>                
 
             },
 

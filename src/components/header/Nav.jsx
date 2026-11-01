@@ -12,7 +12,7 @@ import { useAuth } from "../../hooks/user/AuthContext";
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 
 function Nav() {
-  const {user, logout, isAuthenticated} = useAuth();
+  const {logout, isAuthenticated} = useAuth();
 
   const navigate = useNavigate();
 
@@ -97,7 +97,7 @@ function Nav() {
           />
         )}
 
-        { (
+        {isAuthenticated && (
           <RouteNavList
             icon={faEnvelope}
             navText="Reservación"

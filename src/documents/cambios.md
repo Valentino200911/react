@@ -34,3 +34,5 @@
 - Cambios en router.jsx, cambios en las rutas de Contact.jsx y adición de la ruta de Reservation.jsx
 - Cambios en la estructura de componentización de SelectorInput.jsx y ReservationForm.jsx
 **Séptimo commit del proyecto en GitHub**
+- Protección de las rutas recién creadas, así como de otras anteriormente modificadas a mediante ProtectedRoutes.jsx
+**Octavo commit del proyecto en GitHub**
