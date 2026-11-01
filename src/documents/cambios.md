@@ -30,3 +30,7 @@
 - Cambios en la estructura de Reservation para que matchee con el front (hook y front)
   - Se descentralizo la page de `Contacto.jsx` en `Reservation.jsx` y `Contact.jsx`
 **Sexto commit del proyecto en GitHub**
+- Modificaciones a Nav.jsx y a RouteNavList.jsx
+- Cambios en router.jsx, cambios en las rutas de Contact.jsx y adición de la ruta de Reservation.jsx
+- Cambios en la estructura de componentización de SelectorInput.jsx y ReservationForm.jsx
+**Séptimo commit del proyecto en GitHub**

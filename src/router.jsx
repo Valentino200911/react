@@ -6,11 +6,12 @@ import Cabañas from './components/pages/Cabañas'
 import ServiciosTuristicos from './components/pages/ServiciosTuristicos'
 import Naturaleza from './components/pages/Naturaleza'
 import Indice from './components/pages/Indice'
-import Contacto from './components/pages/Contacto'
 import Editor from './components/pages/Editor'
 import Login from './components/pages/Login'
 import Register from './components/pages/Register'
 import ProtectedRoute from './ProtectedRoute'
+import Contact from './components/pages/Contact'
+import Reservation from './components/pages/Reservation'
 
 export const router = createBrowserRouter([
 
@@ -45,11 +46,15 @@ export const router = createBrowserRouter([
             {
                 path: "/contacto",
 
-                element: <Contacto />                
+                element: <Contact />                
 
             },
+            {
+                path: "/reservacion",
 
+                element: <Reservation />                
 
+            },
             {
                 path: "/naturaleza",
 

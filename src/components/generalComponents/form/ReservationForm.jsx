@@ -12,15 +12,11 @@ import useReservation from "../../../hooks/reservation/useReservation";
 function ReservationForm() {
   
     const [form, setForm] = useState({
-      name: "",
-      surname: "",
-      email: "",
-      phoneNumber: "",   
-      cabaña: "",
+      cottage: "",
       passangerNumber: "",
       entryDate: "",
       exitDate: "",
-      comment: ""
+      reservationComment: ""
   })
 
   const {error, reservation} = useReservation()
@@ -40,15 +36,11 @@ function ReservationForm() {
 
     if (success) {
       setForm({
-      name: "",
-      surname: "",
-      email: "",
-      phoneNumber: "",   
-      cabaña: "",
+      cottage: "",
       passangerNumber: "",
       entryDate: "",
       exitDate: "",
-      comment: ""
+      reservationComment: ""
       })
       alert("Reservación realizada")
     }
@@ -59,61 +51,22 @@ function ReservationForm() {
     <>
       <form action="#" method="get" onSubmit={handleFormSubmit} >
 
-        <Input
-          inputText="Nombre"
-          name="name"
-          id="name"
-          value={form.name}
-          type="text"
-          placeholder="Escriba aquí"
-          onChange={handleInputChange}
-        />
-
-        <Input
-          inputText="Apellido"
-          name="surname"
-          id="surname"
-          value={form.surname}
-          type="text"
-          placeholder="Escriba aquí"
-          onChange={handleInputChange}
-        />
-
-        <Input
-          inputText="E-mail"
-          name="email"
-          id="email"
-          value={form.email}
-          type="email"
-          placeholder="Escriba aquí"
-          onChange={handleInputChange}
-        />
-
-        <Input
-          inputText="Número Telefónico"
-          name="phoneNumber"
-          id="phoneNumber"
-          value={form.phoneNumber}
-          type="number"
-          placeholder="+5491234567890"
-          onChange={handleInputChange}
-        />
-
         <h4 className="faculty-glyphic-regular">Cabaña</h4>
 
         <div className="selectorContainer textSelector">
 
           <SelectorInput 
           selectorText="Cabaña 1"
-          nameId="cabaña" 
-          name="cabaña" 
-          value="1"  
+          id="cottage" 
+          name="cabaña 1" 
+          value="cabaña 1"  
           onChange={handleInputChange}/>
 
           <SelectorInput 
           selectorText="Cabaña 2"
-          nameId="cabaña"
-          value="2" 
+          id="cottage" 
+          name="cabaña 2" 
+          value="cabaña 2"  
           onChange={handleInputChange}/>
           
         </div>
@@ -149,52 +102,54 @@ function ReservationForm() {
 
           <SelectorInput
           selectorText="0"
-          nameId="passangerNumber" 
+          id="passangerNumber" 
           name="0" 
           value="0" 
           onChange={handleInputChange}/>
 
-          <SelectorInput 
+          <SelectorInput
           selectorText="1"
-          nameId="passangerNumber" 
+          id="passangerNumber" 
           name="1" 
-          value="1"
-          onChange={handleInputChange} />
+          value="1" 
+          onChange={handleInputChange}/>
 
-          <SelectorInput 
+          <SelectorInput
           selectorText="2"
-          nameId="passangerNumber" 
+          id="passangerNumber" 
           name="2" 
           value="2" 
           onChange={handleInputChange}/>
 
-          <SelectorInput 
+          <SelectorInput
           selectorText="3"
-          nameId="passangerNumber" 
+          id="passangerNumber" 
           name="3" 
           value="3" 
           onChange={handleInputChange}/>
 
-          <SelectorInput 
+
+          <SelectorInput
           selectorText="4"
-          nameId="passangerNumber" 
-          name="4"
+          id="passangerNumber" 
+          name="4" 
           value="4" 
           onChange={handleInputChange}/>
 
           <SelectorInput
-          selectorText="5" 
-          nameId="passangerNumber" 
+          selectorText="5"
+          id="passangerNumber" 
           name="5" 
           value="5" 
           onChange={handleInputChange}/>
 
           <SelectorInput
-          selectorText="6" 
-          nameId="passangerNumber" 
+          selectorText="6"
+          id="passangerNumber" 
           name="6" 
-          value="6"
-          onChange={handleInputChange} />
+          value="6" 
+          onChange={handleInputChange}/>
+
 
         </div>
 

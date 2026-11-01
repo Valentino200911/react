@@ -1,14 +1,14 @@
 
-function SelectorInput({selectorText, name, value, nameId, onChange}) {
+function SelectorInput({selectorText, name, value, id, onChange}) {
   return (
     <>
 
-        <label htmlFor={nameId} className="faculty-glyphic-regular">{selectorText}</label>
+        <label htmlFor={id} className="faculty-glyphic-regular">{selectorText}</label>
 
         <input
             type="radio"
-            id={nameId}
-            name={nameId}
+            id={id}
+            name={name}
             value={value}
             className="selector faculty-glyphic-regular"
             required

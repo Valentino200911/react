@@ -97,6 +97,15 @@ function Nav() {
           />
         )}
 
+        { (
+          <RouteNavList
+            icon={faEnvelope}
+            navText="Reservación"
+            iconColor="rgb(18, 190, 156)"
+            route="/reservacion"
+          />
+        )}        
+
         {isAuthenticated && (
           <RouteNavList
             icon={faSunPlantWilt}
