@@ -6,6 +6,7 @@ import Textarea from "./Textarea";
 import Button from "../cards/Button";
 import { useState } from "react";
 import useReservation from "../../../hooks/reservation/useReservation";
+import Option from "./Option";
 
 
 
@@ -16,6 +17,7 @@ function ReservationForm() {
       passangerNumber: "",
       entryDate: "",
       exitDate: "",
+      methodOfPayment: "",
       reservationComment: ""
   })
 
@@ -43,6 +45,8 @@ function ReservationForm() {
       reservationComment: ""
       })
       alert("Reservación realizada")
+    }else {
+      return error
     }
     
   }
@@ -57,15 +61,15 @@ function ReservationForm() {
 
           <SelectorInput 
           selectorText="Cabaña 1"
-          id="cottage" 
-          name="cabaña 1" 
+          id="cabaña 1" 
+          name="cottage" 
           value="cabaña 1"  
           onChange={handleInputChange}/>
 
           <SelectorInput 
           selectorText="Cabaña 2"
-          id="cottage" 
-          name="cabaña 2" 
+          id="cabaña 2" 
+          name="cottage" 
           value="cabaña 2"  
           onChange={handleInputChange}/>
           
@@ -102,61 +106,104 @@ function ReservationForm() {
 
           <SelectorInput
           selectorText="0"
-          id="passangerNumber" 
-          name="0" 
+          id="0" 
+          name="passangerNumber" 
           value="0" 
           onChange={handleInputChange}/>
 
           <SelectorInput
           selectorText="1"
-          id="passangerNumber" 
-          name="1" 
+          id="1" 
+          name="passangerNumber" 
           value="1" 
           onChange={handleInputChange}/>
 
           <SelectorInput
           selectorText="2"
-          id="passangerNumber" 
-          name="2" 
+          id="2" 
+          name="passangerNumber" 
           value="2" 
           onChange={handleInputChange}/>
 
           <SelectorInput
           selectorText="3"
-          id="passangerNumber" 
-          name="3" 
+          id="3" 
+          name="passangerNumber" 
           value="3" 
           onChange={handleInputChange}/>
 
 
           <SelectorInput
           selectorText="4"
-          id="passangerNumber" 
-          name="4" 
+          id="4" 
+          name="passangerNumber" 
           value="4" 
           onChange={handleInputChange}/>
 
           <SelectorInput
           selectorText="5"
-          id="passangerNumber" 
-          name="5" 
+          id="5" 
+          name="passangerNumber" 
           value="5" 
           onChange={handleInputChange}/>
 
           <SelectorInput
           selectorText="6"
-          id="passangerNumber" 
-          name="6" 
+          id="6" 
+          name="passangerNumber" 
           value="6" 
           onChange={handleInputChange}/>
 
 
         </div>
 
+        <div className="formGroup">
+
+        <label for="reasonOfContact" className="faculty-glyphic-regular">Motivo de Contacto</label>
+        
+        <select
+          name="methodOfPayment"
+          id="methodOfPayment"
+          required
+          onChange={handleInputChange}
+          value={form.methodOfPayment}
+          className="faculty-glyphic-regular">
+          
+
+
+          <Option 
+          value="#"
+          optionText="Seleccione una de las siguientes opciones"
+          isDisabled={true}
+          isSelected={true}
+          />
+
+          <Option 
+          name="bankTransfer"
+          id="bankTransfer"
+          value="bankTransfer"
+          optionText="Transferencia Electrónica"
+          isDisabled={false}
+          isSelected={false}
+          />
+
+          <Option 
+          name="cash"
+          id="cash"
+          value="cash"
+          optionText="Efectivo"
+          isDisabled={false}
+          isSelected={false}
+          />
+
+        </select>
+
+        </div>
+
         <Textarea
-        name="comment"
-        id="comment"
-        value={form.comment}
+        name="reservationComment"
+        id="reservationComment"
+        value={form.reservationComment}
         label="Comentario"
         placeholder="Escriba aquí"
         onChange={handleInputChange}

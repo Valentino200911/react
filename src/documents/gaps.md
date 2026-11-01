@@ -11,13 +11,11 @@
   - Traducir el ruteo general
   - Verificar los permisos existentes
   - Modificar Hooks y Handles
-- Editar los formularios y los hooks para matchear la info.
-  - NaturalElement
-  - Reservation
-  - Contact
+- Creación de cards mapeables para reservation y contact
 - Ruta y panel de perfil y de admin
 - Solucionar errores de estilo
 - Analizar los fragments <> y </>
 - Modificar el README de Front
 - Desinstalar axios
 - Centralizar FirstGallery y SecondGallery
+- Corregir el envío y la limpieza de los formularios

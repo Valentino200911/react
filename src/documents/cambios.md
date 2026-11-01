@@ -40,3 +40,8 @@
 - Eliminación del archivo Select.jsx debido a que rompía con la idea de la componetización
 - Cambios en las importaciones de index.css
 **Noveno commit del proyecto en GitHub**
+- Adición de un Select en ReservationForm.jsx para definir el método de pago
+- Cambios en la estructura de ReservationForm.jsx
+- Cambios en el CSS correspondiente
+- Registro de gaps
+**Décimo commit del proyecto en GitHub**
