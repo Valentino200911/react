@@ -1,5 +1,5 @@
-import Button from "./Button"
-import Images from "../galleries/Images"
+import Button from "./essentialsCard/Button"
+import Images from "../../galleries/Images"
 
 function Card({cardTitle, src, alt, cardText, href}) {
   return (
