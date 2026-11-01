@@ -1,0 +1,53 @@
+div.editorLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+div.editorLayout form {
+    flex: 1 
+}
+
+div.editorLayout div.previewPanel {
+    flex: 1 
+}
+
+#delete {
+  background-color: rgb(220, 20, 60);
+  border: solid rgb(0, 0, 0);
+  width: 4rem;
+  height: 3.25rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#edit {
+  background-color: rgb(5, 111, 233);
+  border: solid rgb(0, 0, 0);
+  width: 4rem;
+  height: 3.25rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.previewImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.previewImage {
+  width: 280.8px;
+  height: 356px;
+  border-radius: 5%;
+  border: solid;
+  border-color: rgb(174, 23, 23);
+  border-width: 2px;
+  margin: 0 0 1.5rem 0;
+}

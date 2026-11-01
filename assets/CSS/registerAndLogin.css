@@ -1,0 +1,41 @@
+#register {
+  background-color: rgba(223, 62, 13, 0.808);
+  width: 8rem;
+  height: 3rem;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+#login {
+  background-color: rgb(219, 234, 10);
+  width: 8rem;
+  height: 3rem;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+#logout {
+  background-color: rgba(19, 167, 8, 0.808);
+  width: 8rem;
+  height: 3rem;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
