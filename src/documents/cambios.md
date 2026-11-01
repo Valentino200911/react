@@ -46,9 +46,14 @@
 - Registro de gaps
 **Décimo commit del proyecto en GitHub**
 - Reordenamiento de la Estructura de carpetas general del proyecto
-  - Las carpetas `essentials` son los componentes esenciales sobre los cuales se forman otros componentes
+  - Las carpetas `essentialsValue/` son los componentes esenciales sobre los cuales se forman otros componentes
   - El orden a modificar es el siguiente:
 
-    **Undécimo commit del proyecto en GitHub**
+    **Undécimo commit del proyecto en GitHub:**
 
-      - Cambios en el ordenamiento de la carpeta footer, añadiendose `essentials/MediaList.jsx`
+    - Cambios en el ordenamiento de la carpeta footer, añadiendose `essentials/MediaList.jsx`
+
+    **Duodécimo commit del proyecto en GitHub:**
+
+    - Cambios en el nombre, ahora es `essentialsFooter/MediaList.jsx`
+    - Cambios y correcciones en MediaList.jsx

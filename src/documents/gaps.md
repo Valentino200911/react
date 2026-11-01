@@ -13,7 +13,6 @@
   - Modificar Hooks y Handles
 - Creación de cards mapeables para reservation y contact
 - Ruta y panel de perfil y de admin
-- Solucionar errores de estilo
 - Analizar los fragments <> y </>
 - Modificar el README de Front
 - Desinstalar axios

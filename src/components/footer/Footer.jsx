@@ -1,4 +1,4 @@
-import MediaList from "./essentials/MediaList";
+import MediaList from "./essentialsFooter/MediaList";
 
 function Footer() {
   return (
@@ -15,25 +15,25 @@ function Footer() {
             <MediaList
               href="https://www.booking.com"
               alt="Booking"
-              src="/footerImages/booking.png"
+              src="public/footerImages/booking.png"
             />
 
             <MediaList
               href="https://www.facebook.com"
               alt="Facebook"
-              src="/footerImages/facebook.png"
+              src="public/footerImages/facebook.png"
             />
 
             <MediaList
               href="https://www.instagram.com"
               alt="Instagram"
-              src="/footerImages/instagram.png"
+              src="public/footerImages/instagram.png"
             />
 
             <MediaList
               href="https://www.whatsapp.com/?lang=es"
               alt="Whatsapp"
-              src="/footerImages/whatsapp.png"
+              src="public/footerImages/whatsapp.png"
             />
           </ul>
         </div>
