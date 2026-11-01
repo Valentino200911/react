@@ -1,4 +1,4 @@
-import MediaList from "./MediaList";
+import MediaList from "./essentials/MediaList";
 
 function Footer() {
   return (

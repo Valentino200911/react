@@ -45,3 +45,10 @@
 - Cambios en el CSS correspondiente
 - Registro de gaps
 **Décimo commit del proyecto en GitHub**
+- Reordenamiento de la Estructura de carpetas general del proyecto
+  - Las carpetas `essentials` son los componentes esenciales sobre los cuales se forman otros componentes
+  - El orden a modificar es el siguiente:
+
+    **Undécimo commit del proyecto en GitHub**
+
+      - Cambios en el ordenamiento de la carpeta footer, añadiendose `essentials/MediaList.jsx`
