@@ -1,8 +1,8 @@
-import Button from "../cards/Button";
-import Textarea from "./Textarea";
-import useContact from "../../../hooks/contact/useContact";
+import Button from "../../cards/essentialsCard/Button";
+import Textarea from "../essentialsForm/Textarea";
+import useContact from "../../../../hooks/contact/useContact";
 import { useState } from "react";
-import Option from "./Option";
+import Option from "../essentialsForm/Option";
 
 function ContactForm() {
   

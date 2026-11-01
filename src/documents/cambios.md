@@ -48,6 +48,7 @@
 - Reordenamiento de la Estructura de carpetas general del proyecto
   - Las carpetas `essentialsValue/` son los componentes esenciales sobre los cuales se forman otros componentes
   - El orden a modificar es el siguiente:
+  - (Los cambios en las importaciones se harán al final aprovechando los errores)
 
     - components
       - footer
@@ -74,3 +75,8 @@
 
     - Cambios en el ordenamiento de la carpeta generalComponents/cards, añadiendose `essentialsCard/Button.jsx`
     - Se creó `typeCard/` para NatureCard.jsx y Card.jsx
+
+    **Decimocuarto commit del proyecto en GitHub:**
+
+    - Cambios en el ordenamiento de la carpeta generalComponents/form, añadiendose `essentialsForm/`, que incluye a los archivos Input.jsx, SelectorInput.jsx, Textarea.jsx y Option.jsx
+    - Se creó `typeForm/` para ContactForm.jsx y ReservationForm.jsx

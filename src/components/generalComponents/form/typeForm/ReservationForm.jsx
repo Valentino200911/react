@@ -1,14 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
-import Input from "./Input";
-import SelectorInput from "./SelectorInput";
-import Textarea from "./Textarea";
+import Input from "../essentialsForm/Input";
+import SelectorInput from "../essentialsForm/SelectorInput";
+import Textarea from "../essentialsForm/Textarea";
 import Button from "../cards/Button";
 import { useState } from "react";
-import useReservation from "../../../hooks/reservation/useReservation";
-import Option from "./Option";
-
-
+import useReservation from "../../../../hooks/reservation/useReservation";
+import Option from "../essentialsForm/Option";
 
 function ReservationForm() {
   
