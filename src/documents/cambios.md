@@ -80,3 +80,8 @@
 
     - Cambios en el ordenamiento de la carpeta generalComponents/form, añadiendose `essentialsForm/`, que incluye a los archivos Input.jsx, SelectorInput.jsx, Textarea.jsx y Option.jsx
     - Se creó `typeForm/` para ContactForm.jsx y ReservationForm.jsx
+
+    **Decimoquinto commit del proyecto en GitHub:**
+
+    - Cambios en el ordenamiento de la carpeta generalComponents/galleries, añadiendose `essentialsGalleries/Image.jsx`
+    - Se creó `typeGallery/` para FirstImageGallery.jsx y SecondImageGallery.jsx

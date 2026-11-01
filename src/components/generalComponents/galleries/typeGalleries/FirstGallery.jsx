@@ -1,4 +1,4 @@
-import Images from "./Images"
+import Images from "../essentialGalleries/Images"
 
 function FirstGallery({title, description}) {
   return (
