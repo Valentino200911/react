@@ -85,3 +85,7 @@
 
     - Cambios en el ordenamiento de la carpeta generalComponents/galleries, añadiendose `essentialsGalleries/Image.jsx`
     - Se creó `typeGallery/` para FirstImageGallery.jsx y SecondImageGallery.jsx
+
+    **Decimosexto commit del proyecto en GitHub:**
+
+    - Cambios en el ordenamiento de la carpeta header/, añadiendose `essentialsHeader/` para Logo.jsx, Nav.jsx y RouteNavList.jsx  

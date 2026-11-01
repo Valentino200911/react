@@ -1,6 +1,6 @@
 
 import { NavLink } from 'react-router-dom'
-import Icon from '../generalComponents/fontawesome/Icon'
+import Icon from '../../generalComponents/fontawesome/Icon'
 
 function RouteNavList({icon, iconColor, navText, route}) {
   return (

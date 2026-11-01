@@ -7,7 +7,7 @@ import RouteNavList from "./RouteNavList";
 import { useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import Button from "../generalComponents/cards/Button";
-import { useAuth } from "../../hooks/user/AuthContext";
+import { useAuth } from "../../../hooks/user/AuthContext";
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 
