@@ -107,4 +107,12 @@
 - Inicio del proceso de conexión entre el BACK y el FRONT
   - Cambios en los nombres de las rutas para los hooks, Nav.jsx, ProtectedRoutes.jsx y router.jsx
   - Cambios en config.js para permitir la habilitación de la .env
-**Vigésimo commit del proyecto en GitHub:** 
+**Vigésimo commit del proyecto en GitHub:**
+
+### 2 de noviembre de 2026
+
+- Desarrollo de las configuraciones para habilitar el token y permitir la conexión entre el back y front
+- Descentralización de las funcionalidades de AuthContext.jsx
+- Creación de la carpeta `context/` con `AuthContext.jsx`
+- Creación del archivo `user/useContext.jsx`
+**Vigésimo primer commit del proyecto en GitHub:**
