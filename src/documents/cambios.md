@@ -89,3 +89,7 @@
     **Decimosexto commit del proyecto en GitHub:**
 
     - Cambios en el ordenamiento de la carpeta header/, añadiendose `essentialsHeader/` para Logo.jsx, Nav.jsx y RouteNavList.jsx  
+
+    **Decimoséptimo commit del proyecto en GitHub:**
+
+    - En la estructura de carpetas de public/. Reorganización para una mejor identificación de las img.
