@@ -7,7 +7,7 @@ function Logo() {
 
     <NavLink to="/">
     
-    <img src="/logo.png" alt="Cabañas Aguaribay" className="logo" />
+    <img src="public/images/generalImages/logo.png" alt="Cabañas Aguaribay" className="logo" />
     
     </NavLink>
 

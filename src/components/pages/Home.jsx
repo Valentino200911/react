@@ -1,3 +1,4 @@
+import Images from "../generalComponents/galleries/essentialsGalleries/Images"
 
 function Home() {
 
@@ -5,7 +6,10 @@ function Home() {
 
     <>
 
-    <img src="/heroSection.png" alt="" className="mainPicture"/>
+    <Images
+    src="public/images/generalImages/heroSection.png"
+    alt=""
+    className="mainPicture"/>
 
     <div>
     

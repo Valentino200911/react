@@ -97,5 +97,8 @@
     **Decimoctavo commit del proyecto en GitHub:**
 
     - Inicio de la depuración de los problemas en las importaciones
+
+    **Décimo noveno commit del proyecto en GitHub:**
+
     - La página ya es visible, inicio de la segunda parte de las depuraciones
-    
+    - Fin de la segunda parte de las depuraciones

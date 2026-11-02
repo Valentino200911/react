@@ -27,7 +27,7 @@ function ServiciosTuristicos() {
         <div className="cardContainer">
           <Card
             cardTitle="Bosque de la Memoria"
-            src="/cardImages/BOSQUE DE LA MEMORIA.jpg"
+            src="public/images/cardImages/bosque de la memoria.jpg"
             alt="Bosque de la Memoria"
             cardText=" A 5 km: Abierto en 1996 para conmemorar a las Víctimas del Terrorismo de Estado."
             href="https://www.argentina.gob.ar/cultura/monumentos/cristo-redentor-tucuman"
@@ -35,21 +35,21 @@ function ServiciosTuristicos() {
 
           <Card
             cardTitle="Sendero El Funicular"
-            src="/cardImages/SENDERO EL FUNICULAR.jpg"
+            src="public/images/cardImages/sendero el funicular.jpg"
             cardText=" A 8 km: Senderos para la realización de trekking, atravesando la Selva de Yungas."
             href="https://www.tripadvisor.com.ar/Attraction_Review-g1020804-d10749628-Reviews-Sendero_del_Funicular-Yerba_Buena_Province_of_Tucuman_Northern_Argentina.html"
           />
 
           <Card
             cardTitle="El Cristo Bendicente"
-            src="/cardImages/CRISTO BENDICENTE.jpg"
+            src="public/images/cardImages/cristo bendicente.jpg"
             cardText=" A 5 km: Abierto en 1996 para conmemorar a las Víctimas del Terrorismo de Estado."
             href="https://www.argentina.gob.ar/cultura/monumentos/cristo-redentor-tucuman"
           />
 
           <Card
             cardTitle="Cascada del Río Noque"
-            src="/cardImages/CASCADA DEL RIO NOQUE.jpg"
+            src="public/images/cardImages/cascada del rio noque.jpg"
             cardText=" A 5 km: Cascada rodeada de naturaleza con senderos para caminatas."
             href="https://www.tucumanturismo.gob.ar/articulos/articulo/523/cascada-del-rio-noque"
           />

@@ -34,7 +34,7 @@ function Nav() {
     <nav className="navBar navList">
       <div className="buttonContainer">
         {!isAuthenticated && (
-          <button
+          <Button
             type="#"
             id="register"
             buttonText="Registrarse"

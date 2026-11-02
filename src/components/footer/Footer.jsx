@@ -15,25 +15,25 @@ function Footer() {
             <MediaList
               href="https://www.booking.com"
               alt="Booking"
-              src="public/footerImages/booking.png"
+              src="public/images/footerImages/booking.png"
             />
 
             <MediaList
               href="https://www.facebook.com"
               alt="Facebook"
-              src="public/footerImages/facebook.png"
+              src="public/images/footerImages/facebook.png"
             />
 
             <MediaList
               href="https://www.instagram.com"
               alt="Instagram"
-              src="public/footerImages/instagram.png"
+              src="public/images/footerImages/instagram.png"
             />
 
             <MediaList
               href="https://www.whatsapp.com/?lang=es"
               alt="Whatsapp"
-              src="public/footerImages/whatsapp.png"
+              src="public/images/footerImages/whatsapp.png"
             />
           </ul>
         </div>

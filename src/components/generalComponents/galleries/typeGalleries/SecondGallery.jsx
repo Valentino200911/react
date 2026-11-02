@@ -9,25 +9,25 @@ function SecondGallery({title, description}) {
     <div className="divStyle">
 
         <Images
-        src="/cabaña2/Cabaña 2.2.jpg"
+        src="public/images/cabañas/cabaña2/cabaña 2.1.jpg"
         alt="Fotografía de Cabaña 2"
         className="picture"
         />
 
         <Images
-        src="/cabaña2/Cabaña 2.2.jpg"
+        src="public/images/cabañas/cabaña2/cabaña 2.2.jpg"
         alt="Fotografía de Cabaña 2"
         className="picture"
         />
 
         <Images
-        src="/cabaña2/Cabaña 2.3.jpg"
+        src="public/images/cabañas/cabaña2/cabaña 2.3.jpg"
         alt="Fotografía de Cabaña 2"
         className="picture"
         />
 
         <Images
-        src="/cabaña2/Cabaña 2.4.jpg"
+        src="public/images/cabañas/cabaña2/cabaña 2.4.jpg"
         alt="Fotografía de Cabaña 2"
         className="picture"
         />
