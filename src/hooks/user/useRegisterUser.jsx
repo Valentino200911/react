@@ -1,42 +1,36 @@
-import { useState } from "react";
-import { API_URL } from "../../config";
+import { useState } from "react"
+import { RequestApi } from "../../utils/RequestApi"
+import { readSession, userPublicModel } from "../../utils/readSession"
 
+// devuelve { user } si salio bien, o { message } si salio mal
 function useRegisterUser() {
-  const [error, setError] = useState(null);
 
-  const registerUser = async (formData) => {
-    setError(null);
+    const [error, setError] = useState(null)
 
-    try {
-      const response = await fetch(`${API_URL}auth/register`, {
-        method: "POST",
-        headers: {
-          "Content-type": "Application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    const registerUser = async (formData) => {
 
-      if (!response.ok) {
-        throw new Error(
-          `Error al registrar al usuario, por favor intente de nuevo,
-          ${response.status}`,
-        );
-      }
+        setError(null)
 
-      const data = await response.json();
+        try {
+            // el formulario usa nombres en ingles, el back en español.
+            // ⚠️ el rol NO se manda: lo decide el back (todo registro es comprador)
+            const data = await RequestApi("POST", "auth/register", {
+                body: userPublicModel(formData),
+                defaultMessage: "Ocurrió un error al crear la cuenta"
+            })
 
-      const { password: _, ...userWithoutPassword } = data;
+            // si el back devuelve token, el registro ya deja la sesion iniciada
+            return { user: readSession(data) }
 
-      return userWithoutPassword;
-    } catch (error) {
-      console.error("Error al registrar usuario");
-      setError(error);
-      return null;
+        } catch (error) {
+          
+            console.error("Error al registrar usuario", error)
+            setError(error)
+            return { message: error.message }
+        }
     }
-  };
-  console.log(API_URL);
-  
-  return { error, registerUser };
+
+    return { registerUser, error }
 }
 
-export default useRegisterUser;
+export default useRegisterUser

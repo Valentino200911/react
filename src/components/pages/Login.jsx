@@ -28,23 +28,31 @@ function Login() {
   }
 
   const handleFormSubmit = async (event) => {
+
     event.preventDefault()
+
     const userData = await loginUser(form.email, form.password)
 
     if (userData) {
+
       login(userData)
+
       alert("Sesión Iniciada")
+
       setForm({
             email:"",
             password:""
       })
+
       navigate("/")
     }
     
   }
 
   return (
+
     <>
+    
       <h2 className="faculty-glyphic-regular">Iniciar la sesión del usuario</h2>
 
       <form action="#" onSubmit={handleFormSubmit}> 

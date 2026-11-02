@@ -3,6 +3,8 @@ import Button from '../generalComponents/cards/essentialsCard/Button'
 import Input from "../generalComponents/form/essentialsForm/Input";
 import useRegisterUser from "../../hooks/user/useRegisterUser";
 import { useNavigate } from "react-router-dom";
+import { notifyError, notifyToast } from "../../utils/notify";
+import useLoginUser from "../../hooks/user/useLoginUser";
 
 function Register() {
 
@@ -17,6 +19,8 @@ function Register() {
     password:""
   })
 
+  const {loginUser} = useLoginUser()
+
   const {error, registerUser} = useRegisterUser()
 
   const handleInputChange = (event) => {
@@ -28,9 +32,19 @@ function Register() {
   }
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault()
-    const success = await registerUser(form)
-    console.log(success);
+   event.preventDefault()
+        const {success, user, message } = await registerUser(form)
+  
+            // si el back devolvio token, el usuario ya queda logueado
+            if (user.token) {
+                loginUser(user)
+                notifyToast(`¡Bienvenido/a, ${user.name}!`)
+                navigate("/")
+            } else {
+                notifyToast("Cuenta creada, ya podés entrar")
+                navigate("/auth/login")
+            }
+
 
     if (success) {
 
@@ -44,8 +58,11 @@ function Register() {
       password:""
 
       })
-      navigate("/user/login")
-    }
+
+    } else {
+            // el mensaje viene del back (ej: "La contraseña necesita al menos 6 caracteres")
+            notifyError("No se pudo registrar", message)
+        }
     
   }
 

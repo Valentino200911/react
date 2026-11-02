@@ -10,10 +10,15 @@
   - Traducir el ruteo general
   - Verificar los permisos existentes
   - Modificar Hooks y Handles
-- Creación de cards mapeables para reservation y contact
+- Creación de cards mapeables para reservation y contact (Operaciones cruds completas)
 - Ruta y panel de perfil y de admin
 - Analizar los fragments <> y </>
 - Modificar el README de Front
 - Desinstalar axios
 - Centralizar FirstGallery y SecondGallery
 - Corregir el envío y la limpieza de los formularios
+- Corregir los estilos del front
+- Manejo de proxy en el front (ver codigo modelo de front)
+- Que el usuario vea sus propios contacts y reservation (en el front)
+- Registrar la instalación de SweetAlert
+- Cambiar la estructura de carpetas de los hooks para que coincidan con el back

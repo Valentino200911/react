@@ -1,43 +1,43 @@
 import { useState } from "react";
-import useGetUserByEmail from "./useGetUserByEmail";
+import { readSession } from "../../utils/readSession";
+import { RequestApi } from "../../utils/RequestApi";
 
+// Antes: se bajaban TODOS los usuarios y se comparaba la password en el navegador.
+// Ahora: se le manda email + password al back, el back compara contra el hash (bcrypt)
+// y si esta bien devuelve el usuario (sin password) y un token JWT.
 function useLoginUser() {
+
   const [error, setError] = useState(null);
 
-  const { getUserByEmail } = useGetUserByEmail();
+  // devuelve { user } si salio bien, o { message } si salio mal
 
-  const loginUser = async (email, password) => {
-    setError(null);
+   // devuelve { user } si salio bien, o { message } si salio mal
+    const loginUser = async (email, password) => {
 
-    try {
-      const users = await getUserByEmail(email);
+        setError(null)
 
-      if (!users || users.length === 0) {
-        setError("Credenciales No Autorizadas");
+        try {
 
-        return null;
-      }
+            const data = await RequestApi("POST", "auth/login", {
 
-      const userFound = users[0];
+                body: { email, password },
 
-      if (userFound.password !== password) {
-        setError("Credenciales No Autorizadas");
+                defaultMessage: "Credenciales incorrectas"
 
-        return null;
-      }
+            })
+            
+            return { user: readSession(data) }
+            
+        } catch (error) {
 
-      const { password: _, ...userWithoutPassword } = userFound;
+            console.error("Error al loggear usuario", error)
 
-      return userWithoutPassword;
-    } catch (error) {
-      console.error("Error al ingresar como usuario", error);
-
-      setError(error);
-
-      return null;
+            setError(error)
+            
+            return { message: error.message }
+        }
     }
-  };
-  return { error, loginUser };
+    return { error, loginUser }
 }
 
-export default useLoginUser;
+export default useLoginUser

@@ -122,3 +122,9 @@
 **Vigésimo segundo commit del proyecto en GitHub:**
 - Cambios en las importaciones desde useContext.jsx
 **Vigésimo tercer commit del proyecto en GitHub:**
+  - Cambios de código en useLoginUser.jsx y useReservationUser.jsx
+  - Cambios de código en pages/Login.jsx y pages/Register.jsx
+  - Creación de `utils/readError.js`, `utils/readSessionjs`, `utils/RequestApi.js` y `utils/notify.js`
+  - Cambios en ApiError.js y readToken.js
+  - Instalación de sweet alert
+ **Vigésimo cuarto commit del proyecto en GitHub:**
