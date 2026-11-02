@@ -116,3 +116,7 @@
 - Creación de la carpeta `context/` con `AuthContext.jsx`
 - Creación del archivo `user/useContext.jsx`
 **Vigésimo primer commit del proyecto en GitHub:**
+- Creación de los archivos `utils/ApiError.js`, `utils/constants.js` y `utils/readToken.js` para descentralizar funcionalidades y constantes
+- Cambios en useGetUserByEmail.jsx
+- Cambios en AuthContext.jsx
+**Vigésimo segundo commit del proyecto en GitHub:**

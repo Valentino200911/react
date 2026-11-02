@@ -1,11 +1,21 @@
 import { createContext, useEffect, useState } from "react";
+import { SESSION_KEY } from "../../utils/constants";
 
-const AuthContext = createContext();
+export const AuthContext = createContext(null);
 
-const SESSION_KEY = "particularUser";
+function readSavedSession() {
+    try {
+        return JSON.parse(sessionStorage.getItem(SESSION_KEY))
+    } catch (error) {
+        console.error(error)
+        return null
+    }
+}
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
+  
+    const [user, setUser] = useState(readSavedSession)
+    const [error, setError] = useState(null)
 
   useEffect(() => {
     const storedUser = sessionStorage.getItem(SESSION_KEY);

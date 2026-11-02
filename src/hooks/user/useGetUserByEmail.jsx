@@ -1,14 +1,28 @@
 import { useState } from "react";
 import { API_URL } from "../../config";
+import { readToken } from "../../utils/readToken";
 
 function useGetUserByEmail() {
+
   const [error, setError] = useState(null);
 
+  
   const getUserByEmail = async (userEmail) => {
+
+    const token = readToken()
+
+
     try {
       setError(null);
 
-      const response = await fetch(`${API_URL}user? email=${userEmail}`);
+      const response = await fetch(`${API_URL}user? email=${userEmail}`,{
+        method: "POST",
+        headers: {
+            ...({ "Content-Type": "application/json" }),
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+      }
+      );
       ;
       
       if (!response.ok) {
