@@ -2,10 +2,10 @@
 
 import { useNavigate } from "react-router-dom";
 import useGetNature from "../../hooks/nature/useGetNature";
-import Button from '../generalComponents/cards/Button'
+import Button from '../generalComponents/cards/essentialsCard/Button'
 import GeneralError from "../generalComponents/messages/GeneralError";
 import GeneralLoading from "../generalComponents/messages/GeneralLoading";
-import NatureCard from "../generalComponents/cards/NatureCard"
+import NatureCard from "../generalComponents/cards/typeCard/NatureCard"
 import useDeleteNature from "../../hooks/nature/useDeleteNature";
 import { useAuth } from "../../hooks/user/AuthContext";
 

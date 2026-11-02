@@ -1,4 +1,3 @@
-import Images from "../generalComponents/galleries/Images";
 
 function Error() {
   return (

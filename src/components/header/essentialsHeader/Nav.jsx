@@ -3,11 +3,11 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faSunPlantWilt } from "@fortawesome/free-solid-svg-icons";
-import RouteNavList from "./RouteNavList";
 import { useNavigate } from "react-router-dom";
+import RouteNavList from "./RouteNavList";
 import Logo from "./Logo";
-import Button from "../generalComponents/cards/Button";
 import { useAuth } from "../../../hooks/user/AuthContext";
+import Button from "../../generalComponents/cards/essentialsCard/Button";
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 
@@ -34,7 +34,7 @@ function Nav() {
     <nav className="navBar navList">
       <div className="buttonContainer">
         {!isAuthenticated && (
-          <Button
+          <button
             type="#"
             id="register"
             buttonText="Registrarse"

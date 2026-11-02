@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from '../generalComponents/cards/Button'
-import Input from "../generalComponents/form/Input";
+import Button from '../generalComponents/cards/essentialsCard/Button'
+import Input from "../generalComponents/form/essentialsForm/Input";
 import useRegisterUser from "../../hooks/user/useRegisterUser";
 import { useNavigate } from "react-router-dom";
 

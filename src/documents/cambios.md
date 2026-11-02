@@ -93,3 +93,9 @@
     **Decimoséptimo commit del proyecto en GitHub:**
 
     - En la estructura de carpetas de public/. Reorganización para una mejor identificación de las img.
+
+    **Decimoctavo commit del proyecto en GitHub:**
+
+    - Inicio de la depuración de los problemas en las importaciones
+    - La página ya es visible, inicio de la segunda parte de las depuraciones
+    

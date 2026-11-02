@@ -1,5 +1,5 @@
 
-import Nav from './Nav'
+import Nav from "./essentialsHeader/Nav"
 
 function Header() {
 

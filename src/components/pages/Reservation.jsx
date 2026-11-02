@@ -1,4 +1,5 @@
-import ReservationForm from "../generalComponents/form/ReservationForm";
+import ReservationForm from "../generalComponents/form/typeForm/ReservationForm"
+
 
 function Reservation() {
   return (

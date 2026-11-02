@@ -1,8 +1,9 @@
-import Images from "../galleries/Images"
+import Images from "../galleries/essentialsGalleries/Images"
 
 function GeneralLoading() {
   return (
     <>
+    
     <h2 className="faculty-glyphic-regular loadingElements ">Cargando, por favor espere</h2>
 
     <Images

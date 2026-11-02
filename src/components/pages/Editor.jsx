@@ -1,11 +1,10 @@
-import Input from "../generalComponents/form/Input";
-import Textarea from "../generalComponents/form/Textarea";
-import Button from "../generalComponents/cards/Button";
+import Input from "../generalComponents/form/essentialsForm/Input";
+import Textarea from "../generalComponents/form/essentialsForm/Textarea";
+import Button from "../generalComponents/cards/essentialsCard/Button";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Images from "../generalComponents/galleries/Images";
-import NatureCard from "../generalComponents/cards/NatureCard";
-import usePostNature from "../../hooks/nature/usePostNature";
+import Images from "../generalComponents/galleries/essentialsGalleries/Images";
+import NatureCard from "../generalComponents/cards/typeCard/NatureCard";
 import useGetNatureById from "../../hooks/nature/useGetNatureById";
 import usePatchNature from "../../hooks/nature/usePatchNature";
 

@@ -1,6 +1,6 @@
 
-import Button from "./essentialsCard/Button"
-import Images from "../../galleries/Images"
+import Images from "../../galleries/essentialsGalleries/Images";
+import Button from "../essentialsCard/Button";
 import { useAuth } from "../../../../hooks/user/AuthContext";
 
 function NatureCard({cardTitleNature, cardSecondTitle, natureDescription, src, href, onClickEdit, onClickDelete}) {

@@ -1,5 +1,6 @@
-import Button from "./essentialsCard/Button"
-import Images from "../../galleries/Images"
+import Images from "../../galleries/essentialsGalleries/Images";
+import Button from "../essentialsCard/Button";
+
 
 function Card({cardTitle, src, alt, cardText, href}) {
   return (

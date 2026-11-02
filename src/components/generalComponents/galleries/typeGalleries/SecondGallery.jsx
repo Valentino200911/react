@@ -1,4 +1,5 @@
-import Images from "./Images"
+import Images from "../essentialsGalleries/Images"
+
 
 function SecondGallery({title, description}) {
   return (

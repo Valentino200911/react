@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Option({name, id, value, isDisabled, optionText, isSelected}) {
   return (

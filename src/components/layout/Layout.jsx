@@ -1,5 +1,5 @@
 
-import { NavLink, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 
