@@ -3,7 +3,8 @@ import Button from '../generalComponents/cards/essentialsCard/Button'
 import Input from "../generalComponents/form/essentialsForm/Input";
 import useLoginUser from "../../hooks/user/useLoginUser";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../hooks/user/AuthContext";
+import { useAuth } from "../../hooks/user/useContex";
+
 
 function Login() {
 

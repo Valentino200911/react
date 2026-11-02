@@ -6,8 +6,9 @@ import { faSunPlantWilt } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import RouteNavList from "./RouteNavList";
 import Logo from "./Logo";
-import { useAuth } from "../../../hooks/user/AuthContext";
+
 import Button from "../../generalComponents/cards/essentialsCard/Button";
+import { useAuth } from "../../../hooks/user/useContex";
 
 //Por cuestiones de estilo, preferí no dejar un mensaje de "Bienvenidos tras el login"
 

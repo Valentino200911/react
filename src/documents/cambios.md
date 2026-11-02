@@ -120,3 +120,5 @@
 - Cambios en useGetUserByEmail.jsx
 - Cambios en AuthContext.jsx
 **Vigésimo segundo commit del proyecto en GitHub:**
+- Cambios en las importaciones desde useContext.jsx
+**Vigésimo tercer commit del proyecto en GitHub:**

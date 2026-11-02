@@ -7,7 +7,8 @@ import GeneralError from "../generalComponents/messages/GeneralError";
 import GeneralLoading from "../generalComponents/messages/GeneralLoading";
 import NatureCard from "../generalComponents/cards/typeCard/NatureCard"
 import useDeleteNature from "../../hooks/nature/useDeleteNature";
-import { useAuth } from "../../hooks/user/AuthContext";
+import { useAuth } from "../../hooks/user/useContex";
+
 
 function Naturaleza() {
   const { error, loading, bioelements } = useGetNature();
