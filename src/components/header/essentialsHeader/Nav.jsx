@@ -17,11 +17,11 @@ function Nav() {
   const navigate = useNavigate();
 
   const handleRegisterUser = () => {
-    navigate("/user/register");
+    navigate("/auth/register");
   };
 
   const handleLoginUser = () => {
-    navigate("/user/login");
+    navigate("/auth/login");
   };
 
   const handleLogoutUser = () => {

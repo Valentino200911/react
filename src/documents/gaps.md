@@ -5,7 +5,6 @@
   - Form
   - Page
   - Card
-- Permitir manejo del token
 - Unir con el back
 - Habilitar los tokens en backend y jsx
   - Traducir el ruteo general

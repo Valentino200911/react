@@ -80,13 +80,13 @@ export const router = createBrowserRouter([
 
 
             {
-                path: "/user/login",
+                path: "/auth/login",
 
                 element: <Login />                
 
             },
             {
-                path: "/user/register",
+                path: "/auth/register",
 
                 element: <Register />                
 

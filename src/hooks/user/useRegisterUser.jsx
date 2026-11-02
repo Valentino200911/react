@@ -8,7 +8,7 @@ function useRegisterUser() {
     setError(null);
 
     try {
-      const response = await fetch(`${API_URL}user`, {
+      const response = await fetch(`${API_URL}auth/register`, {
         method: "POST",
         headers: {
           "Content-type": "Application/json",
@@ -34,6 +34,8 @@ function useRegisterUser() {
       return null;
     }
   };
+  console.log(API_URL);
+  
   return { error, registerUser };
 }
 

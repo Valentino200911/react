@@ -102,3 +102,9 @@
 
     - La página ya es visible, inicio de la segunda parte de las depuraciones
     - Fin de la segunda parte de las depuraciones
+
+- Regreso a la registración normal de la bitácora
+- Inicio del proceso de conexión entre el BACK y el FRONT
+  - Cambios en los nombres de las rutas para los hooks, Nav.jsx, ProtectedRoutes.jsx y router.jsx
+  - Cambios en config.js para permitir la habilitación de la .env
+**Vigésimo commit del proyecto en GitHub:** 
